@@ -1,14 +1,3 @@
-import thirdtext as tt
-
-
-def search(iterable, obj):
-  """ Returns list of indices where obj can be found in iterable """
-  return [index for index, item in enumerate(iterable) if item == obj]
-
-def is_subset(subset, superset):
-  """ Returns True if every item in subset is also in superset """
-  return all([i in superset for i in subset])
-
 def pause():
   input()
 
@@ -30,16 +19,18 @@ def pick_1():
 #Im stuck here (down arrows) so make sure you show this to Mr.Enrico or Mr.Enrico will notice this as soon as i commit this file to github
 
 
-    if choose_m1 in rooms_m1:
+    if choose_m1 in rooms_m:
         print("\n\n\n\n\n\n\n",rooms_m[choose_m1])
-    if not choose_m1 != "bathroom":
+        if choose_m1 != "kitchen":
             print("\n\n\n\n\n\n")
-            choose_m1 = input("Please choose another room:  ").append(format(room_choice_m))
-    if choose_m1 == "bathroom":
-            return rooms_m[choose_m1]
+            return pick_1()
+        if choose_m1 == "kitchen":
+            input()
+            print("\n\n\n\n\n\n")
     else:
         print("Please try to search in an existing room")
-    pick_1()
+        pick_1()
+
 
 #Im stuck here ^^^^ so make sure you show this to Mr.Enrico or Mr.Enrico will notice this as soon as i commit this file to github
 
