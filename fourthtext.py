@@ -1,5 +1,5 @@
-def thirdmid(self):
-    s1 = ("As people start entering the room, you start to back away from the lifeless body who used to be your passion")
+def thirdmid():
+    s1 = ("\n\n\nAs people start entering the room, you start to back away from the lifeless body who used to be your passion")
     print(s1)
     input()
     s2 = ("Nicole: 'What happened in here?'")
@@ -11,19 +11,17 @@ def thirdmid(self):
     s4 = ("Henry: 'WHAT DID YOU DO TO HER!'")
     print(s4)
     input()
-    s5 = ((self.player, ": "), "'I tried to save her but it...'")
+    s5 = ("You : 'I tried to save her but it...'")
     print(s5)
     input()
     s6 = ("Henry: 'BUT WHAT!'")
     print(s6)
     input()
-    s7 = ((self.player, ": "), "'But I couldn't do much to save her'")
+    s7 = ("You : 'But I couldn't do much to save her'")
     print(s7)
     input()
     s8 = ("Nicole: 'What will I tell the cops when they show up..'")
     print(s8)
     input()
+    s9 = ("Adrian starts to dial 911 on his phone but he was showing no recongnizable emotion")
     #continue this when you have time
-
-
-thirdmid(self)
