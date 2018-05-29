@@ -1,7 +1,35 @@
-def pause():
-  input()
-
-
+def secondmid():
+    s1 = ("Crystal:'Please... help'")
+    print(s1)
+    input()
+    s2 = ("Crystal:'It hurts.. inside'")
+    print(s2)
+    input()
+    s3 = ("You : 'What happened to you?'")
+    print(s3)
+    input()
+    s4 = ("You : 'Did you fall or...'")
+    print(s4)
+    s5 = ("Crystal: 'No, i think it something was in my drink'")
+    print(s5)
+    input()
+    s6 = ("Crystal: 'I just can't s.. -*Cough*-'")
+    print(s6)
+    input()
+    s7 = ("You : 'Just hold on tight love, I'll get some help quick'")
+    print (s7)
+    input()
+    s8 = ("Crystal: 'No, don't leave -*Cough*- my side please.. I'm scared")
+    print(s8)
+    input()
+    s9 = ("You see Crystal move side to side as she struggles to breath")
+    print(s9)
+    input()
+    s10 = ("You try to perform CPR on her with all your might")
+    print(s10)
+    s11 = ("You soon fail and try to call for help")
+    print(s11)
+    input()
 
 
 
