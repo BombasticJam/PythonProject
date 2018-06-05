@@ -86,7 +86,7 @@ def pick2():
 
     #  Test Code
 
-    print(["bedroom","kitchen","partyroom","diningroom","backyard","bathroom"])
+    print(rooms.keys())
     room_choice = input("Which Room will you like to pick?: ")
     if room_choice in rooms:
         print("\n\n\n\n\n\n",rooms[room_choice])
@@ -94,8 +94,14 @@ def pick2():
         if people_choice in people_items:
             print("\n\n\n\n\n\n",people_items[people_choice])
             item_choice = input("Which item would you like to investigate?: ")
-            if people_choice in item_choice:
-                print("\n\n\n\n\n\n", people_choice[item_choice])
+            if people_choice == "briana":
+                print(briana[item_choice])
+            if people_choice == "liliana":
+                print(liliana[item_choice])
+            if people_choice == "kevin":
+                print(kevin[item_choice])
+            if people_choice == "howard":
+                print(howard[item_choice])
 
 
 
@@ -108,3 +114,4 @@ def pick2():
 
 
 pick2()
+
