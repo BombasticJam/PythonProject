@@ -1,45 +1,45 @@
 def pick2():
     rooms = {
             "bedroom" : ["Liliana","Briana", "Kevin", "Howard"],
-            "kitchen" :"Nicole\nHenry\nArnold\nAdrian\nCrystal",
-            "partyroom" : "Pamela\nLaisha\nArleen\nAndrew\nMishael\nJohn\nDaniel\nLanaya\nNatalie\nJacob",
-            "diningroom" : "Michael\nEnrico\nEdu\nJohnathan\nMatthew\nAmanda",
-            "backyard" : "June\nJuly\nDawn\nJulissa\nPuppy",
-            "bathroom" : "Jade"
+            "kitchen" :["Nicole","Henry","Arnold","Adrian","Crystal"],
+            "partyroom" : ["Pamela","Laisha","Arleen","Andrew","Mishael","John","Daniel","Lanaya","Natalie","Jacob"],
+            "diningroom" : ["Michael","Enrico","Edu","Johnathan","Matthew","Amanda"],
+            "backyard" : ["June","July","Dawn","Julissa","Puppy"],
+            "bathroom" : ["Jade"]
     }
 
     people_items = {
-        "liliana" : ["wallet","dice","reciept","monopoly_money"],
-        "briana" : "purse\nreceipt\nphone\nheadphones\nmonopoly_money",
-        "kevin" : "watch\npencil\nnotebook\nheadphones\nmonopoly_money",
-        "howard" : "wallet\nrepiept\npaper\nmonopoly_money",
-        "nicole" : "toothpick\nempty_water_bottle\npurse\nbracelet",
-        "henry" : "keychain\nredcup\nwallet\nmintgum\ncigarettes",
-        "arnold" : "bandana\nwallet\nwatch\nmatches\nphone",
-        "adrian" : "dogtag\npurse\nwallet\nnametag\npaper\nphone",
-        "crystal" : "bloodypieceofpaper\npurse\ncrystalnecklace\nbracelet\nbody",
-        "pamela" : "necklace\nbracelet\npen\nwatch\npurse\nphone",
-        "laisha" : "deckofcards\nlipstick\npurse\nlolipop\nheadphones\nphone",
-        "arleen" : "waterbottle\nsmallbackpack\ncosmetic\nbubblegum\nphone",
-        "andrew" : "headband\nbeer\nphone\nkeys\nglasses",
-        "mishael" : "bookmark\nseedpackets\ncard\nphone\nmarbles",
-        "john" : "cdplayer\ncddisk\nwallet\ncandybar\nredcup",
-        "daniel" : "cigarettes\ncase\nbusinesscard\nreceipt",
-        "lanaya" : "kitten\nhamster\nflowers\npurse\nreceipt",
-        "natalie" : "journal\nphone\nheadphones\npencil",
-        "jacob" : "painkillers\nnecklace\nwallet\nbadge",
-        "michael" : "headphones\njacket\nreciept\nchickenwings",
-        "enrico" : "lotion\nnapkin\ncarkeys\nmarkers",
-        "edu" : "box\nphone",
-        "johnathan" : "reciept\norangejuice\nwallet",
-        "matthew" : "button\nwallet\nemptywaterbottle\nredcup\nphone",
-        "amanda" : "braclet\nphone\npurse",
-        "june" : "dogtreats\ndogcollar\nflowerhat\nnecklace\npurse",
-        "july" : "dogshirt\npurse\nwatch\nphone\ncandybits\nflowerhat",
-        "dawn" : "redball\nglasses\nphone\nwaterbottle\nflowerhat",
-        "julissa" : "phone\nbag\nreciept\ndogtag",
-        "puppy" : "talk",
-        "jade" : "interact"
+        "liliana" : ["wallet","dice","reciept","monopolymoney"],
+        "briana" : ["purse","receipt","phone","headphones","monopolymoney"],
+        "kevin" : ["watch","pencil","notebook","headphones","monopolymoney"],
+        "howard" : ["wallet","repiept","paper","monopolymoney"],
+        "nicole" : ["toothpick","emptywaterbottle","purse","bracelet"],
+        "henry" : ["keychain","redcup","wallet","mintgum","cigarettes"],
+        "arnold" : ["bandana","wallet","watch","matches","phone"],
+        "adrian" : ["dogtag","purse","wallet","nametag","paper","phone"],
+        "crystal" : ["bloodypieceofpaper","purse","crystalnecklace","bracelet","body"],
+        "pamela" : ["necklace","bracelet","pen","watch","purse","phone"],
+        "laisha" : ["deckofcards","lipstick","purse","lolipop","headphones","phone"],
+        "arleen" : ["waterbottle","smallbackpack","cosmetic","bubblegum","phone"],
+        "andrew" : ["headband","beer","phone","keys","glasses"],
+        "mishael" : ["bookmark","seedpackets","card","phone","marbles"],
+        "john" : ["cdplayer","cddisk","wallet","candybar","redcup"],
+        "daniel" : ["cigarettes","case","businesscard","receipt"],
+        "lanaya" : ["kitten","hamster","flowers","purse","receipt"],
+        "natalie" : ["journal","phone","headphones","pencil"],
+        "jacob" : ["painkillers","necklace","wallet","badge"],
+        "michael" : ["headphones","jacket","reciept","chickenwings"],
+        "enrico" : ["lotion","napkin","carkeys","markers"],
+        "edu" : ["box","phone"],
+        "johnathan" : ["reciept","orangejuice","wallet"],
+        "matthew" : ["button","wallet","emptywaterbottle","redcup","phone"],
+        "amanda" : ["braclet","phone","purse"],
+        "june" : ["dogtreats","dogcollar","flowerhat","necklace","purse"],
+        "july" : ["dogshirt","purse","watch","phone","candybits","flowerhat"],
+        "dawn" : ["redball","glasses","phone","waterbottle","flowerhat"],
+        "julissa" : ["phone","bag","reciept","dogtag"],
+        "puppy" : ["talk"],
+        "jade" : ["interact"]
 
 #crystal will have a button which will be the trophy of the murder (The murder will have to contain her button)  Crystal's purse's goods have been stolen so her purse will contain nothing
 #Pamela will have similar items that crystal will have because they are best friends
@@ -68,7 +68,7 @@ def pick2():
         "wallet" : "As you look into her wallet, something fell out of it which made you muffle 'Deja vu' as you picked it up and looked at it. It was a white piece of plastic which looked like a gum wrapper. You put the gum wrapper into your pocket and search the wallet thorough but found nothing but credit cards.",
         "dice" : "Just some plain old white dice, nothing to be interested in",
         "reciept" : "Bought 4 bags of fruit (Who needs 4 bags of fruit...) and a limited edition monopoly gameboard",
-        "nmonopoly_money" : "1000 monopoly credits"
+        "nmonopolymoney" : "1000 monopoly credits"
     }
 
     briana = {
@@ -86,7 +86,7 @@ def pick2():
 
     #  Test Code
 
-    print("\n\nbedroom\nkitchen\npartyroom\ndiningroom\nbackyard\nbathroom")
+    print(["bedroom","kitchen","partyroom","diningroom","backyard","bathroom"])
     room_choice = input("Which Room will you like to pick?: ")
     if room_choice in rooms:
         print("\n\n\n\n\n\n",rooms[room_choice])
