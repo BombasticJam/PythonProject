@@ -9,8 +9,12 @@ def pick2():
     }
 
     people_items = {
-        "liliana" : ["wallet","dice","reciept","monopolymoney"],
-        "briana" : ["purse","receipt","phone","headphones","monopolymoney"],
+        "liliana" : {"wallet":"As you look into her wallet, something fell out of it which made you muffle 'Deja vu' as you picked it up and looked at it. It was a white piece of plastic which looked like a gum wrapper. You put the gum wrapper into your pocket and search the wallet thorough but found nothing but credit cards",
+                     "dice": "Just some plain old white dice, nothing to be interested in",
+                     "reciept":"Bought 4 bags of fruit (Who needs 4 bags of fruit...) and a limited edition monopoly gameboard",
+                     "monopolymoney":"1000 monopoly credits"},
+        "briana" : {"purse" : "As soon as Briana handed her purse to you, you looked in it and found absolutley nothing unusual present so you give it back to her",
+        "receipt": "that","phone":"fat","headphones":"cat","monopolymoney":"the"},
         "kevin" : ["watch","pencil","notebook","headphones","monopolymoney"],
         "howard" : ["wallet","repiept","paper","monopolymoney"],
         "nicole" : ["toothpick","emptywaterbottle","purse","bracelet"],
@@ -32,7 +36,7 @@ def pick2():
         "enrico" : ["lotion","napkin","carkeys","markers"],
         "edu" : ["box","phone"],
         "johnathan" : ["reciept","orangejuice","wallet"],
-        "matthew" : ["button","wallet","emptywaterbottle","redcup","phone"],
+        "matthew" : {"button":"murder","wallet": "wal","emptywaterbottle":"ha","redcup":"ok","phone":"ya"},
         "amanda" : ["braclet","phone","purse"],
         "june" : ["dogtreats","dogcollar","flowerhat","necklace","purse"],
         "july" : ["dogshirt","purse","watch","phone","candybits","flowerhat"],
@@ -64,12 +68,7 @@ def pick2():
 
 
 
-    liliana = {
-        "wallet" : "As you look into her wallet, something fell out of it which made you muffle 'Deja vu' as you picked it up and looked at it. It was a white piece of plastic which looked like a gum wrapper. You put the gum wrapper into your pocket and search the wallet thorough but found nothing but credit cards.",
-        "dice" : "Just some plain old white dice, nothing to be interested in",
-        "reciept" : "Bought 4 bags of fruit (Who needs 4 bags of fruit...) and a limited edition monopoly gameboard",
-        "nmonopolymoney" : "1000 monopoly credits"
-    }
+
 
     briana = {
     "purse" : "As soon as Briana handed her purse to you, you looked in it and found absolutley nothing unusual present so you give it back to her",
@@ -85,23 +84,28 @@ def pick2():
 
 
     #  Test Code
+    while True:
+        print(rooms.keys())
+        room_choice = input("Which Room will you like to pick?: ")
+        if room_choice in rooms:
+            print("\n\n\n\n\n\n",rooms[room_choice])
+            people_choice = input("Which person would you like to look into?: ")
+            if people_choice in people_items:
+                print("\n\n\n\n\n\n",people_items[people_choice])
+                item_choice = input("Which item would you like to investigate?: ")
+                if item_choice in people_items[people_choice]:
+                    print("\n\n\n\n\n\n\n",people_items[people_choice][item_choice])
+                    input()
+                else:
+                    print("\n\n\n\n\n","Please redo your choices again")
+                    input()
+                    pick2()
+                if item_choice == "button":
+                    return False
 
-    print(rooms.keys())
-    room_choice = input("Which Room will you like to pick?: ")
-    if room_choice in rooms:
-        print("\n\n\n\n\n\n",rooms[room_choice])
-        people_choice = input("Which person would you like to look into?: ")
-        if people_choice in people_items:
-            print("\n\n\n\n\n\n",people_items[people_choice])
-            item_choice = input("Which item would you like to investigate?: ")
-            if people_choice == "briana":
-                print(briana[item_choice])
-            if people_choice == "liliana":
-                print(liliana[item_choice])
-            if people_choice == "kevin":
-                print(kevin[item_choice])
-            if people_choice == "howard":
-                print(howard[item_choice])
+
+
+
 
 
 
@@ -114,4 +118,3 @@ def pick2():
 
 
 pick2()
-
