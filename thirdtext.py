@@ -30,7 +30,3 @@ def secondmid():
     s11 = ("You soon fail and try to call for help")
     print(s11)
     input()
-
-
-
-    #This is just some test code
