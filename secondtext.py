@@ -31,10 +31,10 @@ def pick_1():
 
 
 def mid():
-    s1 = ("You are the host of a party, and you have invited many of your highschool friends over")
+    s1 = ("You are the host of a party, and you have invited many of your old highschool friends over")
     print(s1)
     pause()
-    s2 = ("After an hour or so, your house is filled to the brim with some of your best friends,")
+    s2 = ("After an hour or so, your house is filled to the brim with some of your friends,")
     print(s2)
     pause()
     s3 = ("Henry,")
