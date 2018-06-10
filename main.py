@@ -1,6 +1,8 @@
 import secondtext as st
 import thirdtext as tt
 import fourthtext as ft
+import fifthtext as fit
+import sixthtext as sit
 
 class Game:
   def pause():
@@ -44,3 +46,5 @@ a.start()
 print(st.mid())
 tt.secondmid()
 ft.thirdmid()
+fit.pick2()
+sit.end1()
